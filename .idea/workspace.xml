@@ -23,14 +23,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba628241-b586-4ff9-8691-47271bfafca0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/test/java/com/example/demo/DemoApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test1/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/demo/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/demo/mvnw.cmd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tohtml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ums/.classpath" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ums/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ums/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ums/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ums/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ums/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/demo/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ums/.project" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ums/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ums/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
@@ -51,7 +65,7 @@
       <change beforePath="$PROJECT_DIR$/ums/src/main/java/com/greglturnquist/payroll/HomeController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ums/src/main/java/com/greglturnquist/payroll/Manager.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ums/src/main/java/com/greglturnquist/payroll/ManagerRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ums/src/main/java/com/greglturnquist/payroll/ReactAndSpringDataRestApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ums/src/main/java/com/greglturnquist/payroll/ReactAndSpringDataRestApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/DemoApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ums/src/main/java/com/greglturnquist/payroll/SecurityConfiguration.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ums/src/main/java/com/greglturnquist/payroll/SpringDataJpaUserDetailsService.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ums/src/main/java/com/greglturnquist/payroll/SpringDataRestEventHandler.java" beforeDir="false" />
@@ -77,6 +91,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$USER_HOME$/.m2/wrapper/dists/apache-maven-3.6.3-bin/1iopthnavndlasol9gbrbg6bf2/apache-maven-3.6.3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1j9ymAIuyoqdJAkUDDySD2YRSVT" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -99,13 +120,15 @@
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -123,7 +146,8 @@
       <workItem from="1603230827859" duration="1000" />
       <workItem from="1603230833166" duration="2435000" />
       <workItem from="1603329233927" duration="24000" />
-      <workItem from="1603329268971" duration="711000" />
+      <workItem from="1603329268971" duration="851000" />
+      <workItem from="1603330202778" duration="123000" />
     </task>
     <servers />
   </component>
@@ -140,8 +164,13 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="208" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603330042485">
+      <screen x="47" y="23" width="1393" height="877" />
+    </state>
+    <state x="208" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog/47.23.1393.877@47.23.1393.877" timestamp="1603330042485" />
     <state width="1351" height="231" key="GridCell.Tab.0.bottom" timestamp="1603238893406">
       <screen x="46" y="23" width="1394" height="877" />
     </state>
@@ -162,9 +191,17 @@
     </state>
     <state width="1351" height="231" key="GridCell.Tab.0.right/46.23.1394.877@46.23.1394.877" timestamp="1603238893406" />
     <state width="1351" height="231" key="GridCell.Tab.0.right/47.23.1393.877@47.23.1393.877" timestamp="1603231125800" />
+    <state x="373" y="168" key="NewModule_or_Project.wizard" timestamp="1603330318516">
+      <screen x="47" y="23" width="1393" height="877" />
+    </state>
+    <state x="373" y="168" key="NewModule_or_Project.wizard/47.23.1393.877@47.23.1393.877" timestamp="1603330318516" />
     <state x="231" y="43" key="SettingsEditor" timestamp="1603231069768">
       <screen x="47" y="23" width="1393" height="877" />
     </state>
     <state x="231" y="43" key="SettingsEditor/47.23.1393.877@47.23.1393.877" timestamp="1603231069768" />
+    <state x="408" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1603330300034">
+      <screen x="47" y="23" width="1393" height="877" />
+    </state>
+    <state x="408" y="213" width="670" height="676" key="search.everywhere.popup/47.23.1393.877@47.23.1393.877" timestamp="1603330300034" />
   </component>
 </project>
