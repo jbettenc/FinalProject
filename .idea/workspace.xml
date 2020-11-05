@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ba628241-b586-4ff9-8691-47271bfafca0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tohtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ums/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ums/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ums/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ums/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ums/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ums/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ums/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ums/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ums/README.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ums/images/security-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ums/images/security-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ums/images/security-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ums/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ums/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ums/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ums/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ums/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ums/src/main/java/com/greglturnquist/payroll/DatabaseLoader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ums/src/main/java/com/greglturnquist/payroll/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ums/src/main/java/com/greglturnquist/payroll/EmployeeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ums/src/main/java/com/greglturnquist/payroll/EventHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ums/src/main/java/com/greglturnquist/payroll/HomeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ums/src/main/java/com/greglturnquist/payroll/Manager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ums/src/main/java/com/greglturnquist/payroll/ManagerRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ums/src/main/java/com/greglturnquist/payroll/ReactAndSpringDataRestApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ums/src/main/java/com/greglturnquist/payroll/SecurityConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ums/src/main/java/com/greglturnquist/payroll/SpringDataJpaUserDetailsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ums/src/main/java/com/greglturnquist/payroll/SpringDataRestEventHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ums/src/main/java/com/greglturnquist/payroll/WebSocketConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ums/src/main/js/api/uriListConverter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ums/src/main/js/api/uriTemplateInterceptor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ums/src/main/js/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ums/src/main/js/client.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ums/src/main/js/follow.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ums/src/main/js/websocket-listener.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ums/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ums/src/main/resources/static/built/bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ums/src/main/resources/static/built/bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ums/src/main/resources/static/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ums/src/main/resources/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ums/webpack.config.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1j9ymAIuyoqdJAkUDDySD2YRSVT" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ba628241-b586-4ff9-8691-47271bfafca0" name="Default Changelist" comment="" />
+      <created>1603230760659</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603230760659</updated>
+      <workItem from="1603230761759" duration="61000" />
+      <workItem from="1603230827859" duration="1000" />
+      <workItem from="1603230833166" duration="2435000" />
+      <workItem from="1603329233927" duration="24000" />
+      <workItem from="1603329268971" duration="711000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1351" height="231" key="GridCell.Tab.0.bottom" timestamp="1603238893406">
+      <screen x="46" y="23" width="1394" height="877" />
+    </state>
+    <state width="1351" height="231" key="GridCell.Tab.0.bottom/46.23.1394.877@46.23.1394.877" timestamp="1603238893406" />
+    <state width="1351" height="231" key="GridCell.Tab.0.bottom/47.23.1393.877@47.23.1393.877" timestamp="1603231125801" />
+    <state width="1351" height="231" key="GridCell.Tab.0.center" timestamp="1603238893406">
+      <screen x="46" y="23" width="1394" height="877" />
+    </state>
+    <state width="1351" height="231" key="GridCell.Tab.0.center/46.23.1394.877@46.23.1394.877" timestamp="1603238893406" />
+    <state width="1351" height="231" key="GridCell.Tab.0.center/47.23.1393.877@47.23.1393.877" timestamp="1603231125800" />
+    <state width="1351" height="231" key="GridCell.Tab.0.left" timestamp="1603238893406">
+      <screen x="46" y="23" width="1394" height="877" />
+    </state>
+    <state width="1351" height="231" key="GridCell.Tab.0.left/46.23.1394.877@46.23.1394.877" timestamp="1603238893406" />
+    <state width="1351" height="231" key="GridCell.Tab.0.left/47.23.1393.877@47.23.1393.877" timestamp="1603231125799" />
+    <state width="1351" height="231" key="GridCell.Tab.0.right" timestamp="1603238893406">
+      <screen x="46" y="23" width="1394" height="877" />
+    </state>
+    <state width="1351" height="231" key="GridCell.Tab.0.right/46.23.1394.877@46.23.1394.877" timestamp="1603238893406" />
+    <state width="1351" height="231" key="GridCell.Tab.0.right/47.23.1393.877@47.23.1393.877" timestamp="1603231125800" />
+    <state x="231" y="43" key="SettingsEditor" timestamp="1603231069768">
+      <screen x="47" y="23" width="1393" height="877" />
+    </state>
+    <state x="231" y="43" key="SettingsEditor/47.23.1393.877@47.23.1393.877" timestamp="1603231069768" />
+  </component>
+</project>
