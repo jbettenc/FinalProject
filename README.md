@@ -1,3 +1,5 @@
 # University Messaging System Backend
-All API requests will be stored at uscums.postman.co
-contact Will to be added
+<p>All API requests will be documented at uscums.postman.co</p>
+</br>
+<p>contact Will to be added to the postman group (if you want)</p>
+
