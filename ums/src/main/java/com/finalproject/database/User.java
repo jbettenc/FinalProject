@@ -1,4 +1,4 @@
-package com.greglturnquist.payroll;
+package com.finalproject.database;
 
 import java.util.Objects;
 
@@ -11,24 +11,21 @@ import javax.persistence.Version;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
-public class Employee {
+public class User {
 
 	private @Id @GeneratedValue Long id;
 	private String firstName;
 	private String lastName;
-	private String description;
+	private String email;
 
-	private @Version @JsonIgnore Long version;
+	// private @Version @JsonIgnore Long version;
 
-	private @ManyToOne Manager manager;
+	private User() {}
 
-	private Employee() {}
-
-	public Employee(String firstName, String lastName, String description, Manager manager) {
+	public User(String firstName, String lastName, String email) {
 		this.firstName = firstName;
 		this.lastName = lastName;
-		this.description = description;
-		this.manager = manager;
+		this.email = email;
 	}
 
 	@Override
@@ -39,15 +36,14 @@ public class Employee {
 		return Objects.equals(id, employee.id) &&
 			Objects.equals(firstName, employee.firstName) &&
 			Objects.equals(lastName, employee.lastName) &&
-			Objects.equals(description, employee.description) &&
-			Objects.equals(version, employee.version) &&
-			Objects.equals(manager, employee.manager);
+			Objects.equals(email, employee.email);
+			//Objects.equals(version, employee.version);
+			
 	}
 
 	@Override
 	public int hashCode() {
-
-		return Objects.hash(id, firstName, lastName, description, version, manager);
+		return Objects.hash(id, firstName, lastName, email);
 	}
 
 	public Long getId() {
@@ -74,29 +70,22 @@ public class Employee {
 		this.lastName = lastName;
 	}
 
-	public String getDescription() {
-		return description;
+	public String getEmail() {
+		return email;
 	}
 
-	public void setDescription(String description) {
-		this.description = description;
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
-	public Long getVersion() {
-		return version;
-	}
+	// public Long getVersion() {
+	// 	return version;
+	// }
 
-	public void setVersion(Long version) {
-		this.version = version;
-	}
+	// public void setVersion(Long version) {
+	// 	this.version = version;
+	// }
 
-	public Manager getManager() {
-		return manager;
-	}
-
-	public void setManager(Manager manager) {
-		this.manager = manager;
-	}
 
 	@Override
 	public String toString() {
@@ -104,9 +93,7 @@ public class Employee {
 			"id=" + id +
 			", firstName='" + firstName + '\'' +
 			", lastName='" + lastName + '\'' +
-			", description='" + description + '\'' +
-			", version=" + version +
-			", manager=" + manager +
+			", email='" + email + 
 			'}';
 	}
 }
