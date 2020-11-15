@@ -5,6 +5,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+
 @Configuration
 class LoadDatabase {
 
@@ -14,8 +15,8 @@ class LoadDatabase {
   CommandLineRunner initDatabase(UserRepository repository) {
 
     return args -> {
-      log.info("Preloading " + repository.save(new User("Robert", "Hung","juipohun@usc.edu")));
-      log.info("Preloading " + repository.save(new User("W", "Supp", "wsupp@usc.edu")));
+//      log.info("Preloading " + repository.save(new User("Robert", "Hung","juipohun@usc.edu")));
+//      log.info("Preloading " + repository.save(new User("W", "Supp", "wsupp@usc.edu")));
     };
   }
 }
