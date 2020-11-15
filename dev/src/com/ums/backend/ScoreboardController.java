@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.json.simple.JSONArray;
@@ -46,12 +47,6 @@ public class ScoreboardController {
 		JSONObject main = new JSONObject();
 		JSONArray users = new JSONArray();		
 		
-//		{
-//		    "users": [
-//		        {"score": 10, "email": "email@email.com"},
-//		        {"score": 2, "email": "email2@email.com"}
-//		    ]
-//		}
 		scoreboardLock.lock();
 		for (Entry<String, Integer> entry : this.scoreboard.entrySet()) {
 			JSONObject curr = new JSONObject();
@@ -72,6 +67,13 @@ public class ScoreboardController {
 			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 		}
 		return new ResponseEntity<>(score, HttpStatus.OK);
+	}
+	
+	@PostMapping("/user/create")
+	public ResponseEntity<String> postScoreboardUser(@RequestBody String email) {
+		scoreboard.put(email, 0);
+		return new ResponseEntity<>("", HttpStatus.CREATED);
+		
 	}
 
 	@DeleteMapping("/scoreboard/user/{email}")
