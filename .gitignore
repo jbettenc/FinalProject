@@ -25,3 +25,4 @@ hs_err_pid*
 
 # node_modules
 /ums/node_modules/
+.DS_Store
