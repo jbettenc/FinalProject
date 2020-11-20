@@ -15,7 +15,7 @@ public abstract class Game{
     protected String user2move;
     protected String winner;
 
-    protected Game(String u1){//constructor
+    public Game(String u1){//constructor
         this.user1=u1;
         this.user2="";
         this.gameID=UID.getID();
@@ -24,12 +24,15 @@ public abstract class Game{
         this.user2move="";
         this.winner="";     //0-user1 won, 1-user2 won, 2-tie
     }
-    protected boolean addUser(String u2){//triggers game start
+    public boolean addUser(String u2){//triggers game start
         this.user2=u2;
         return true;
     }
+    public UUID getGameID() {
+    	return gameID;
+    }
 
     //main logic methods
-    protected abstract String move(String user, String move);
-    protected abstract void updateGame();
+    public abstract int move(String user, String move);
+    public abstract void updateGame();
 }
