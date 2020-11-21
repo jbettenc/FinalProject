@@ -39,6 +39,7 @@ public class GameController {
 			if(rpsGames.isEmpty()) {
 				g=new RPS(email);
 				rpsGames.add(g);
+				games.put(g.getGameID().toString(), g);
 				JSONObject ret = new JSONObject();
 				ret.put("gameId", g.getGameID().toString());
 				return new ResponseEntity<>(ret, HttpStatus.CREATED);
@@ -46,7 +47,6 @@ public class GameController {
 			else {
 				g=rpsGames.remove();
 				g.addUser(email);
-				games.put(g.getGameID().toString(), g);
 				JSONObject ret = new JSONObject();
 				ret.put("gameId", g.getGameID().toString());
 				return new ResponseEntity<>(ret, HttpStatus.ACCEPTED);
@@ -56,6 +56,7 @@ public class GameController {
 			if(tttGames.isEmpty()) {
 				g=new TTT(email);
 				tttGames.add(g);
+				games.put(g.getGameID().toString(), g);
 				JSONObject ret = new JSONObject();
 				ret.put("gameId", g.getGameID().toString());
 				return new ResponseEntity<>(ret, HttpStatus.CREATED);
@@ -63,7 +64,6 @@ public class GameController {
 			else {
 				g=tttGames.remove();
 				g.addUser(email);
-				games.put(g.getGameID().toString(), g);
 				JSONObject ret = new JSONObject();
 				ret.put("gameId", g.getGameID().toString());
 				return new ResponseEntity<>(ret, HttpStatus.ACCEPTED);

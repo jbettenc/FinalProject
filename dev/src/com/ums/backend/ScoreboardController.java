@@ -99,4 +99,8 @@ public class ScoreboardController {
 	public static void internalPutScoreboard(String email, Integer value) {
 		scoreboard.put(email, value);
 	}
+	
+	public static void internalAddScoreboard(String email, Integer value) {
+		scoreboard.put(email, scoreboard.get(email) + value);
+	}
 }
