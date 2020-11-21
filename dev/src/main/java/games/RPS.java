@@ -1,5 +1,7 @@
 package games;
 
+import com.ums.backend.ScoreboardController;
+
 public class RPS extends Game {
     protected int score;
 
@@ -84,12 +86,20 @@ public class RPS extends Game {
                 score+=10;
             }
             else winner="2";
-            if((score/10)==2 || (score%10)==2){
-                if(score/10==2) winner="0";
+            if((score == 10) || (score == 1)){
+                if(score == 10) winner="0";
                 else winner="1";
                 state=5;
             }
             else state=1;
+            
+            if(winner.equals("0")) {
+	            ScoreboardController.internalAddScoreboard(user1, 5);
+	            ScoreboardController.internalAddScoreboard(user2, -3);
+            } else if(winner.equals("1")) {
+            	ScoreboardController.internalAddScoreboard(user2, 5);
+                ScoreboardController.internalAddScoreboard(user1, -3);
+            }
         }
     }
 }

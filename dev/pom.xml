@@ -15,12 +15,24 @@
 	<name>umsbackend</name>
 	<description>UMSBackend</description>
 	<packaging>jar</packaging>
+<<<<<<< HEAD
+=======
+
+>>>>>>> d48e1d628276915e5fcd42cc79388b9f695a11ba
 	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
 		<java.version>1.8</java.version>
 		<start-class>com.ums.backend.UMSBackend</start-class>
 	</properties>
 
 	<dependencies>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
 
 		<dependency>
 			<groupId>com.google.code.gson</groupId>
@@ -33,10 +45,33 @@
 			<artifactId>json-simple</artifactId>
 			<version>1.1</version>
 		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+<<<<<<< HEAD
+=======
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-configuration-processor</artifactId>
+			<optional>true</optional>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>org.junit.vintage</groupId>
+					<artifactId>junit-vintage-engine</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+>>>>>>> d48e1d628276915e5fcd42cc79388b9f695a11ba
 	</dependencies>
 
 	<build>
@@ -44,6 +79,17 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<fork>true</fork>
+					<mainClass>${start-class}</mainClass>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>repackage</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
