@@ -62,12 +62,13 @@ public class GameTest{
             else if(gameType.equals("ttt")) System.out.print("Enter move for "+u+" (rowcol): ");
             String move=in.nextLine();
             //attempt move request
-            String out=g.move(u,move);
-            if(out.equals("Processed Successfully!")) System.out.println(GREEN+out+RESET);
+            int out=g.move(u,move);
+            if(out==200) System.out.println(GREEN+out+" - OK"+RESET);
             else System.out.println(RED+out+RESET);
             System.out.println(BOLD+"\nJSON returned:\n"+gson.toJson(g)+"\n"+RESET);
         }
         //Display final JSON
         System.out.println(BOLD+"\nGAMEOVER\nJSON returned:\n"+gson.toJson(g)+"\n"+RESET);
+        in.close();
     }
 }
