@@ -18,13 +18,13 @@ public class RPS extends Game {
         return super.addUser(user2);
     }
 
-    public String move(String user, String move) {
-        if(state==5) return "Game has already ended. "+winner+" was the winner";
-        if(state==0) return "Game has not started yet. Waiting for additional player...";
-        if(state==4) return "Game is updating previous moves. Please wait...";
+    public int move(String user, String move) {
+        if(state==5) return 401; //HTTP Status Code: Unauthorized - game has already ended
+        if(state==0) return 409; //HTTP Status Code: Conflict - game has not started yet, waiting for additional player
+        if(state==4) return 409; //HTTP Status Code: Conflict - waiting for game to update moves
         if(user.equals(user1)) {    //user is user1
             //user1 has moved already
-            if (state == 2) return user+" has already moved.\nWaiting for "+user2+"...";
+            if (state == 2) return 409; //HTTP Status Code: Conflict - waiting for other user
             //user1 has not moved, check if input valid
             if (move.equals("0") || move.equals("1") || move.equals("2")) {
                 //input is valid
@@ -33,13 +33,13 @@ public class RPS extends Game {
                 if (state == 1) state = 2;
                 else if (state == 3) state = 4;
                 updateGame();
-                return "Processed Successfully!";
+                return 200; //HTTP Status Code: OK
             }
-            return move+" is an invalid input";
+            return 406; //HTTP Status Code: Not Acceptable - invalid input move
         }
         else if(user.equals(user2)){    //user is user2
             //user 2 has moved already
-            if (state == 3) return user+" has already moved...\nWaiting for "+user1+"...";
+            if (state == 3) return 409; //HTTP Status Code: Conflict - waiting for other user
             //user2 has not moved, check if input valid
             if (move.equals("0") || move.equals("1") || move.equals("2")) {
                 //input is valid
@@ -48,11 +48,11 @@ public class RPS extends Game {
                 if(state==1) state=3;
                 else if(state==2) state=4;
                 updateGame();
-                return "Processed Successfully!";
+                return 200; //HTTP Status Code: OK
             }
-            return move+" is an invalid input";
+            return 406; //HTTP Status Code: Not Acceptable - invalid input move
         }
-        return user+" is not in this game";
+        return 401; //HTTP Status Code: Unauthorized - user is not in this game
     }
 
     public void updateGame() {

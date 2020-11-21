@@ -9,11 +9,11 @@
 		<version>2.3.2.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example</groupId>
-	<artifactId>rest-service</artifactId>
+	<groupId>com.jbettenc</groupId>
+	<artifactId>umsbackend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>rest-service</name>
-	<description>Demo project for Spring Boot</description>
+	<name>umsbackend</name>
+	<description>UMSBackend</description>
 
 	<properties>
 		<java.version>1.8</java.version>

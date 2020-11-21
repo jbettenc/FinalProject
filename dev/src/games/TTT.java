@@ -37,15 +37,15 @@ public class TTT extends Game {
         return super.addUser(user2);
     }
 
-    public String move(String user, String move) {
-        if(state==4) return "Game has already ended. "+winner+" was the winner";
-        if(state==0) return "Game has not started yet. Waiting for additional player...";
-        if(state==3) return "Game is updating previous moves. Please wait...";
+    public int move(String user, String move) {
+        if(state==5 || state==4) return 401; //HTTP Status Code: Unauthorized - game has already ended
+        if(state==0) return 409; //HTTP Status Code: Conflict - game has not started yet, waiting for additional player
+        if(state==3) return 409; //HTTP Status Code: Conflict - waiting for game to update moves
 
         if(user.equals(playerX)){   //user goes first
             //user has moved already
             if (state == 2){
-                return user+" has already moved...\nWaiting for "+playerO+"...";
+            	return 409; //HTTP Status Code: Conflict - waiting for other user
             }
             //user has not moved, check if input valid
             if (move.length()==2) {
@@ -60,16 +60,16 @@ public class TTT extends Game {
                         //update game
                         state=2;
                         updateGame();
-                        return "Processed Successfully!";
+                        return 200; //HTTP Status Code: OK
                     }
                 }
             }
-            return user+" input is not valid...";
+            return 406; //HTTP Status Code: Not Acceptable - invalid input move
         }
         else if(user.equals(playerO)){  //user goes second
             //first has not moved yet
             if (state == 1){
-                return playerX+" goes first but has not moved yet.\nWaiting for "+playerX+"...";
+            	return 409; //HTTP Status Code: Conflict - waiting for other user
             }
             //first has moved, check if input valid
             if (move.length()==2) {
@@ -84,14 +84,14 @@ public class TTT extends Game {
                         //update game
                         state=1;
                         updateGame();
-                        return "Processed Successfully!";
+                        return 200; //HTTP Status Code: OK
                     }
                 }
             }
-            return user+" input is not valid...";
+            return 406; //HTTP Status Code: Not Acceptable - invalid input move
 
         }
-        return user+" is not in this game...";
+        return 401; //HTTP Status Code: Unauthorized - user is not in this game
     }
 
     public void updateGame() {
